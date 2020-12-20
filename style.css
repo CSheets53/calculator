@@ -1,0 +1,91 @@
+:root {
+    --output-height: 10vh;
+    --operator-grid-height: 10vh;
+    --offset: 5vh;
+    --digit-grid-height: calc(100vh - (var(--output-height) + var(--operator-grid-height) + var(--offset)));
+}
+
+html {
+    font-size: 60px;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+#output-display {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+    height: var(--output-height);
+    font-size: 1.5em;
+
+    background-color: #818181;
+}
+
+#output {
+    margin-right: 3vw;
+}
+
+#button-container {
+    margin-top: 1vh;
+    display: grid;
+
+    grid-gap: 5px;
+    height: var(--digit-grid-height);
+
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+#operator-buttons {
+    margin-top: 1vh;
+    display: grid;
+
+    grid-gap: 5px;
+    height: var(--operator-grid-height);
+
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.btn {
+    font-size: 1em;
+
+    background-color: rgb(200, 200, 200);
+    border: 2px solid #000000;
+}
+
+.btn:hover {
+    background-color: rgba(200, 200, 200, 0.5);
+}
+
+.op {
+    background-color: rgb(248, 192, 7);
+}
+
+.op:hover {
+    background-color: rgb(248, 192, 7, 0.5);
+}
+
+.eq {
+    color: #ffffff;
+    background-color: rgb(36, 180, 0);
+}
+
+.eq:hover {
+    color: #000000;
+    background-color: rgb(36, 180, 0, 0.5);
+}
+
+.clear {
+    color: #ffffff;
+    background-color: rgb(255, 83, 83);
+}
+
+.clear:hover {
+    color: #000000;
+    background-color: rgba(255, 83, 83, 0.5);
+}

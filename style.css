@@ -15,6 +15,10 @@ html, body {
     font-family: 'Times New Roman', Times, serif;
 }
 
+body {
+    background-color: darkgrey;
+}
+
 #output-display {
     display: flex;
     justify-content: end;
@@ -23,7 +27,7 @@ html, body {
     height: var(--output-height);
     font-size: 1.5em;
 
-    background-color: #818181;
+    background-color: #5af5edcb;
 }
 
 #output {
